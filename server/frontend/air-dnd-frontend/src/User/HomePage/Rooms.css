@@ -1,0 +1,133 @@
+.room-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+
+  .image-container{
+    position: relative;
+  }
+  .room-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  left: 40px;
+  bottom:80%;
+  margin-left: 20px;
+  background-color: #fff;
+  height: 30px;
+  width: 90px;
+
+  
+}
+.room-price a{
+    text-decoration: none;
+}
+.suffix-price{
+    color: grey;
+}
+
+.regular-price{
+    
+        color: red;
+}
+.regular-price.suffix-price{
+    margin-top: 100px;
+}
+  
+.room-card {
+    width: calc(50% - 50px); /* Two cards per row on larger screens */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .room-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .room-card {
+      width: calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .room-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+
+
+  .room-features{
+    display: flex;
+    
+  }
+  .room-features li{
+    list-style: none;
+    margin: 10px;
+
+  }
+  .room-features li i{
+    margin: 10px;
+}
+h4{
+    margin-bottom: 5px;
+}
+h4, a{
+    color: #1a1a1a;
+   
+}
+
+.room-heading{
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.room-heading h1{
+  font-size: 100px;
+
+
+}
+
+
+
+
+
+.navbar {
+  
+  padding-top: 50px;
+  text-align: center;
+  margin-left: 250px;
+  margin-top: 10px;
+  
+
+}
+
+.navbar h1 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.btn-group__item{
+  height: 60px;
+  width: 140px;
+}
+
+
+  

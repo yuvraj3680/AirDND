@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model UserDetails {
+  id       Int      @id @default(autoincrement())  
+  username String
+  mobile   String
+  email    String?   @unique
+  password String
+}
+
+model Location {
+  id      Int     @id @default(autoincrement())  @unique
+  hotels  Hotel[]
+  name    String
+  city    String
+  country String
+}
+
+model Vender {
+id            Int       @id @default(autoincrement())  @unique
+name          String
+email         String
+location_id   Int
+}
+
+model Hotel {
+  id           Int            @id @default(autoincrement()) @unique
+  name         String
+  address      String
+  checkIn      DateTime
+  checkOut     DateTime
+  location     Location       @relation(fields: [location_id], references: [id], onDelete: Cascade)
+  location_id  Int
+  RoomCategory RoomCategory[]
+  vender_id    Int  
+
+}
+
+
+
+model RoomCategory {
+  id           Int    @id @default(autoincrement())  @unique
+  hotel        Hotel  @relation(fields: [hotel_id], references: [id], onDelete: Cascade)
+  hotel_id     Int
+  categoryName String
+  Room         Room[]
+}
+
+
+
+model Room {
+  id          Int          @id @default(autoincrement())  @unique
+  hotel_id    Int
+  category    RoomCategory @relation(fields: [category_id], references: [id] , onDelete: Cascade)
+  category_id Int
+  pricePerDay Float
+  services    Service[]
+}
+
+model Service {
+  id          Int     @id @default(autoincrement())  @unique
+  name        String
+  description String
+  rooms       Room    @relation(fields: [room_id], references: [id], onDelete: Cascade)
+  room_id     Int
+}

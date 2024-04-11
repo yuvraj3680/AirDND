@@ -1,0 +1,55 @@
+{
+    "menu": [
+      {
+        "label": "Home",
+        "subMenu": [
+          {
+            "label": "Big Rooms",
+            "navValue": 1
+          },
+          {
+            "label": "Small Rooms",
+            "navValue": 2
+          },
+          {
+            "label": "Medium Rooms",
+            "navValue": 3
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "subMenu": [
+          {
+            "label": "Big Rooms",
+            "navValue": 4
+          },
+          {
+            "label": "Small Rooms",
+            "navValue": 5
+          },
+          {
+            "label": "Medium Rooms",
+            "navValue": 6
+          }
+        ]
+      },
+      {
+        "label": "Rooms",
+        "subMenu": [
+          {
+            "label": "Big Rooms",
+            "navValue": 7
+          },
+          {
+            "label": "Small Rooms",
+            "navValue": 8
+          },
+          {
+            "label": "Medium Rooms",
+            "navValue": 9
+          }
+        ]
+      }
+    ]
+  }

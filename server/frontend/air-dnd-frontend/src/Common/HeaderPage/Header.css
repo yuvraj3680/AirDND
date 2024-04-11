@@ -1,0 +1,189 @@
+/* .container{
+    background-color:#1a1a1a;
+    padding: 20px 20px;
+    display: flex;
+    
+}
+ul{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+ li{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+    padding: 0 20px;
+}
+.dropdown-links{
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.navbar-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   margin-left: auto;
+    }
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+     color: inherit;  use default color
+}
+
+.menuIcon{
+ height: 50px;
+ width: 50px;
+ 
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+   background-color: #B95C47;
+   border-radius: 5px ;
+   border: none;
+   color: #ffffff;
+    
+}
+.bellIcon{
+    height: 20px;
+    width: 40px;
+} */
+
+/* --- dropdown--- */
+
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 150px;
+    z-index: 1;
+    
+    
+  }
+  .dropdown-links:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  } */ 
+
+  /* ---------- */
+/* .main-links{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+} */
+
+nav {
+
+  background-color: black; /* Navbar background color */
+height: 100px;
+
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* padding-top: 30px; */
+
+}
+
+.menuIcon{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-bottom: 20px;
+  text-align: center;
+}
+nav ul li {
+  
+ margin: 0 30px;
+  position: relative; /* Relative positioning for sub-menu */
+  cursor: pointer;
+  /* margin-top: 30px;
+  padding-bottom: 20px; */
+  
+}
+.item-links{
+  padding-top: 30px;
+  margin-left: 10px;
+}
+.icons-img-menu{
+  padding-top: 15px;
+  margin-left: 30px; 
+   margin-right: 40px;
+   
+}
+nav ul li a {
+  color: white; 
+  text-decoration: none; 
+    padding: 10px; /* Padding around Navbar links */
+  display: block;
+  padding-left:0;
+  text-wrap:nowrap;
+  
+  
+}
+
+nav ul ul {
+  display: none; /*  by default hide */
+  position: absolute; 
+  background-color:black; /* Sub-menu background color */
+  padding: 10px;
+  top: 100%; /* Position sub-menu below parent  */
+  
+}
+nav ul li:hover > ul {
+  display: block;
+ 
+}
+
+nav ul ul li :hover {
+  background-color: #555; /*  background color on hover */
+}
+nav ul ul li {
+  margin-right:0; /* Remove margin between sub-menu items */
+ margin-left: 5px;
+} 
+nav ul ul li a {
+  color: white; /* Sub-menu link text color */
+}
+button{
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; */
+  width: 150px;
+  height: 40px;
+ margin-top: 30px;
+ text-align: center;
+ margin-right: 30px;
+}

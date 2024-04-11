@@ -1,0 +1,422 @@
+
+/* Home page */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-md-12 {
+  width: 100%;
+  float: left;
+}
+
+.slide-bg-wrap {
+  background: url("https://nuss.uxper.co/boutique-hotel/wp-content/uploads/sites/2/2021/05/El-Moderne-_Habitaciones23_ALTA.jpg") no-repeat center center/cover;
+  height: 800px;
+  position: relative;
+  background-size: cover;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.title {
+  margin: 10px 0 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title i {
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inner-toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount, .adult, .children {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.btn-quantity {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Icon css */
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+}
+
+
+
+.demo-directional .nav ul li.show-demo i {
+  animation: spin__ 4s infinite linear;
+}
+
+.demo-directional .nav ul li i {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.demo-directional .nav ul li.buy-now {
+  background-color: hwb(114 42% 11%);
+}
+
+@keyframes spin__ {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.demo-directional .nav ul {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0;
+}
+
+.demo-directional .nav ul li  {
+width: 160%; /* Adjusted width to take full width */
+height: 70px;
+border-radius: 10px;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+background-color: #fff;
+text-align: center;
+margin-bottom: 10px;
+color: #111;
+list-style: none;
+display: flex; /* Use flexbox */
+flex-direction: column; /* Arrange items vertically */
+margin-bottom: 10px; /* Adjusted margin to create space between list items */
+justify-content: flex-end; /* Align items to the bottom */
+
+
+}
+.demo-directional .nav ul li a {
+text-decoration: none; 
+}
+
+.fa  {
+margin-bottom: 7px;
+margin-left: 6px;
+
+}
+img {
+width: 50%;
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 2px;
+margin-left: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.analytics-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+
+.ux-room-datepick-calendar .react-datepicker__input-container input {
+width: 100px; /* Adjust width as needed */
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+outline: none;
+}
+
+/* Add any additional styles for the calendar if needed */
+
+
+
+
+
+/* RoomBookingForm.css */
+.booking-form {
+display: flex;
+flex-direction: column;
+align-items: start;
+padding: 20px;
+}
+
+.counter {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.counter label {
+margin-right: 10px;
+}
+
+.counter button {
+margin: 0 5px;
+cursor: pointer;
+padding: 5px 10px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.counter span {
+min-width: 20px;
+text-align: center;
+}
+
+
+/* Analytics css *
+/* Search form container */
+.ux-booking-form {
+order: 1;
+display: flex;
+left: 100px;
+justify-content: space-between; /* Align children to opposite ends */
+align-items: center; /* Vertically center items */
+}
+
+/* Rooms / Guests section */
+.form-toggle {
+order: 2;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+/* Rooms, Adults, and Children sections */
+.inner-toggle {
+order: 3;
+width: 100px;
+justify-content: space-between;
+
+
+}
+
+/* Submit button */
+.form-submit {
+ 
+order: 4;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.container {
+display: flex;
+
+
+
+justify-content: center;
+align-items: center;
+height: 20vh;
+width: 90vh;
+margin-right: 450px;
+
+}
+
+.ux-booking-form {
+width: 100vh;
+
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-submit {
+text-align: center;
+background-color: brown ;
+}
+
+button {
+padding: 10px 20px;
+
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+
+
+/* .container {
+display: flex;
+background-color: white;
+justify-content: center;
+align-items: center;
+height: 20vh;
+width: 90vh;
+margin-right: 450px;
+} */
+
+.ux-booking-form {
+width: 100vh;
+height: 130px;
+padding: 20px;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 5px;
+color: #000; /* Set text color to black */
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: #000; /* Set text color to black */
+}
+
+input[type="text"],
+input[type="number"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+color: #000; /* Set text color to black */
+}
+
+.form-submit {
+text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: brown;
+}
+
+button {
+padding: 10px 20px;
+color: #000; /* Set text color to black */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-left: auto; /* Shift button to the right */
+}
+.check-button{
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.check-button span{
+  padding: 20px;
+}
+.form-container{
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
